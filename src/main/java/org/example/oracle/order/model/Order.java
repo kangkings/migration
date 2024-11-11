@@ -33,7 +33,7 @@ public class Order {
     private Date orderDate;
 
     @Column(name = "total_amount", nullable = false)
-    private BigDecimal totalAmount;
+    private Integer totalAmount;
 
     // 양방향 관계 설정: 주문은 여러 제품을 가질 수 있음
     @OneToMany(mappedBy = "order", cascade = CascadeType.ALL, fetch = FetchType.LAZY)

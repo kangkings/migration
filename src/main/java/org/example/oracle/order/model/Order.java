@@ -8,8 +8,6 @@ import lombok.NoArgsConstructor;
 import org.example.oracle.customer.model.Customer;
 import org.example.oracle.product.model.Product;
 
-
-import java.math.BigDecimal;
 import java.sql.Date;
 import java.util.List;
 

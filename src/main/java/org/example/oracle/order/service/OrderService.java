@@ -31,9 +31,14 @@ public class OrderService {
             throw new IllegalArgumentException("존재하지 않는 상품");
         }
 
+        // 각 상품의 가격을 합산하여 totalAmount 계산
+        int totalAmount = productList.stream()
+                .mapToInt(Product::getPrice)
+                .sum();
+
         Order order = Order.builder()
                 .orderDate(orderRegisterReq.getOrderDate())
-                .totalAmount(orderRegisterReq.getTotalAmount())
+                .totalAmount(totalAmount)
                 .customer(customer)
                 .build();
 

@@ -15,7 +15,6 @@ public class OrderRegisterReq {
 
     private Long customerId;
     private Date orderDate;
-    private Integer totalAmount;
     private List<Long> productList;
 
 }

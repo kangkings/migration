@@ -16,8 +16,8 @@
 
 spring:
   datasource:
-    url: jdbc:mariadb://172.30.1.95:3306/data?useSSL=false&allowPublicKeyRetrieval=true
-    username: root
+    url: jdbc:mariadb://192.168.36.40:3306/DB_migration?useSSL=false&allowPublicKeyRetrieval=true
+    username: djm
     password: qwer1234
     driver-class-name: org.mariadb.jdbc.Driver
 

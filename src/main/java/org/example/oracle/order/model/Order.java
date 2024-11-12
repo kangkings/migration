@@ -2,13 +2,12 @@ package org.example.oracle.order.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import org.example.oracle.customer.model.Customer;
 import org.example.oracle.product.model.Product;
 
-
-import java.math.BigDecimal;
 import java.sql.Date;
 import java.util.List;
 
@@ -17,6 +16,7 @@ import java.util.List;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
+@Builder
 public class Order {
 
     @Id
